@@ -8,8 +8,6 @@ const CreateTask = ({ parentTask = null, minStartDate, maxEndDate }) => {
   const [endDate, setEndDate] = useState("");
 
   const { tasks, setTasks } = useContext(TasksContext);
-  console.log("fetched tasks list: ", tasks);
-  console.log("fetched tasks update fn: ", setTasks);
 
   const changeTitle = (e) => {
     setTitle(e.target.value);
@@ -31,8 +29,6 @@ const CreateTask = ({ parentTask = null, minStartDate, maxEndDate }) => {
       endDate,
       parentTask,
     };
-    console.log("created Task: ", task);
-    console.log("fetched tasks list: ", tasks);
     setTasks([...tasks, task]);
   };
 

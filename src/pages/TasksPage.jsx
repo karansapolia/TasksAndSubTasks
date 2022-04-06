@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 import CreateTask from "../components/CreateTask";
 import Task from "../components/Task";
@@ -6,10 +6,6 @@ import TasksContext from "../contexts/TasksContext";
 
 const TasksPage = () => {
   const [tasks, setTasks] = useState([]);
-
-  useEffect(() => {
-    console.log("Updated Task list: ", tasks);
-  }, [tasks]);
 
   return (
     <div className="tasks-page">

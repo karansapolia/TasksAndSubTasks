@@ -32,7 +32,7 @@ const Task = ({ id, startDate, endDate, parentTask, title, subTasks }) => {
         className="create-subtask-button"
         onClick={() => setToggleCreateTask(!toggleCreateTask)}
       >
-        Create Sub-task
+        Add Sub-task
       </button>
       {toggleCreateTask && (
         <CreateTask
